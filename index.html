@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/946cabd75f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -378,7 +379,7 @@
 
         <!-- successful students -->
 
-        <section class="container">
+        <section class="container mb-5">
             <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4">
                 <div class="col">
                     <div class="card">
@@ -419,8 +420,147 @@
             </div>
         </section>
 
+        <!-- view all -->
+        <section class="container d-flex justify-content-center align-items-center mb-5 ">
+            <p><a class="btn btn-md btn-primary px-4 py-2 border rounded d-md-none d-lg-block" href="#">View all</a></p>
+        </section>
+
+        <!-- frequently asked question -->
+
+
+        <section class="container">
+
+            <h1 class="text-center fw-bolder ">Frequently Asked Questions</h1>
+
+            <p class="text-center mb-5 text-muted">It is a long established fact that a reader
+                will be distracted by the readable content of a page when looking at its layout.</p>
+
+        </section>
+
+        <!-- accordion part -->
+        <section class="container mb-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button text-dark fw-bolder" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What are the differences between flexbox and grid?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p class="text-muted">The basic difference between CSS Grid Layout and CSS Flexbox Layout is
+                                that flexbox was
+                                designed for layout in one dimension - either a row or a column. Grid was designed for
+                                two-dimensional layout - rows, and columns at the same time. The two specifications
+                                share some common features, however, and if you have already learned how to use flexbox,
+                                the similarities should help you get to grips with Grid.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed text-dark fw-bolder" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            What are the differences between Bootstrap and Tailwind?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p class="text-muted">Bootstrap is much larger than Tailwind and requires multiple files to
+                                access its full
+                                functionality. Because of this, using Bootstrap means a significantly larger file size
+                                than Tailwind. Bootstrap also offers mobile-first, responsive components pre-styled to
+                                create flawless website pages quickly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed text-dark fw-bolder" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            What is CSS box model?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p class="text-muted">When laying out a document, the browser's rendering engine represents
+                                each element as a
+                                rectangular box according to the standard CSS basic box model. CSS determines the size,
+                                position, and properties (color, background, border size, etc.) of these boxes.
+                                Every box is composed of four parts (or areas), defined by their respective edges: the
+                                content edge, padding edge, border edge, and margin edge.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed text-dark fw-bolder" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            What is CSS box model?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p class="text-muted">A semantic element clearly describes its meaning to both the browser
+                                and the developer.
+                                Examples of non-semantic elements:
+                                <code>div</code> and <code>span</code> - Tells nothing about its content.
+                                Examples of semantic elements: <code>form</code>, <code>table</code>, and
+                                <code>article</code> - Clearly defines its
+                                content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- trusted companies part -->
+        <section class="container d-none d-lg-block d-xl-block mb-5">
+
+            <h1 class="text-center fw-bold mb-5">Trusted by over 800+ companies</h1>
+
+            <div class="d-flex justify-content-around">
+                <img class="h-100" src="/images/company/company-1.png" alt="">
+                <img class="h-100" src="/images/company/company-2.png" alt="">
+                <img class="h-100" src="/images/company/company-3.png" alt="">
+                <img class="h-100" src="/images/company/company-4.png" alt="">
+                <img class="h-100" src="/images/company/company-5.png" alt="">
+                <img class="h-100" src="/images/company/company-6.png" alt="">
+
+            </div>
+
+
+        </section>
+
 
     </main>
+
+    <footer>
+        <section class="container bg-dark">
+            <div style="height: 250px ;" class="d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-light text-center fw-bolder">Pro Edu</h2>
+                <p class="text-light text-center">Office 41, Zawaya Buildin, Ghala Muscat,
+                    Sultanate of Oman</p>
+                <p class="text-light text-center">Privacy Ploicy | Terms of use</p>
+
+                <div class="mx-auto">
+                    <i class=" text-light fs-3 fa-brands fa-facebook me-3"></i>
+                    <i class=" text-light fs-3 fa-brands fa-twitter me-3"></i>
+                    <i class=" text-light fs-3 fa-brands fa-linkedin-in me-3"></i>
+                    <i class=" text-light fs-3 fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </section>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
